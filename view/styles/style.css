@@ -1,0 +1,277 @@
+body {
+    scroll-behavior: smooth;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: #0D1321;
+    background-color: #F7F7FF;
+}
+
+body.light {
+    color: #F7F7FF;
+    background-color: #0D1321;
+}
+
+.colorRed {
+    color: #C03221;
+}
+
+.colorWhite {
+    color: #F7F7FF;
+}
+
+.colorTan {
+    color: #F2D0A4;
+}
+
+.colorBlue {
+    color: #545E75;
+}
+
+.colorGreen {
+    color: #3F826D;
+}
+
+.colorBlack {
+    color: #0D1321;
+}
+
+.logo {
+    max-width: 50%;
+}
+
+.navbar {
+    background-color: #545E75;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: #F7F7FF;
+    font-size: 24px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:visited {
+    color: #F7F7FF;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: #F2D0A4;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:focus {
+    color: #F2D0A4;
+}
+
+.navbar-expand-lg .navbar-nav .showLogin {
+    display: block;
+}
+
+.navbar-expand-lg .navbar-nav .hideLogin {
+    display: none;
+}
+
+.navbar-expand-lg .navbar-nav .showLogout {
+    display: block;
+}
+
+.navbar-expand-lg .navbar-nav .hideLogout {
+    display: none;
+}
+
+.navbar-expand-lg .navbar-nav .showAdmin {
+    display: block;
+}
+
+.navbar-expand-lg .navbar-nav .hideAdmin {
+    display: none;
+}
+
+.offcanvas-header {
+    background-color: #545E75;
+    color: #F7F7FF;
+}
+
+.offcanvas-body {
+    background-color: #F7F7FF;
+    color: #0D1321;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.formBorder {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+table, td {
+    border: thin solid black;
+}
+
+.errorMessage {
+    color: red;
+    font-style: italic;
+    background-color: #F7F7FF;
+    margin: 5px;
+    text-align: center;
+}
+
+.recipeCard {
+    background-color: #F2D0A4;
+    color: #0D1321;
+    border: thin solid #0D1321;
+    border-radius: 25px;
+    width: 1200px;
+    box-sizing: border-box;
+    display: block;
+    margin: auto;
+}
+
+.recipeImage {
+    max-width: 70%;
+    border: thin solid #0D1321;
+    border-radius: 15px;
+    display: block;
+    margin: auto;
+}
+
+.col > .form-input {
+    display: none;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.addMargin {
+    padding-left: 50px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.recipeView {
+    border: thin solid #0D1321;
+    background-color: #F2D0A4;
+    color: #0D1321;
+    border-radius: 10px;
+    width: 300px;
+    height: 280px;
+    box-sizing: border-box;
+    display: block;
+    margin: auto;
+}
+
+.recipeViewImage {
+    display: block;
+    margin: auto;
+    max-width: 50%;
+}
+
+.noDec {
+    text-decoration: none;
+    color: #0D1321;
+}
+
+.pagination > li > a {
+    background-color: #F7F7FF;
+    color: #0D1321;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover {
+    color: #F7F7FF;
+    background-color: #545E75;
+    border-color: #0D1321;
+}
+
+.pagination > .active > a {
+    color: #F7F7FF;
+    background-color: #545E75;
+    border: solid 1px #0D1321;
+}
+
+.pagination > .active > a:hover {
+    background-color: #545E75;
+    border: solid 1px #0D1321;
+}
+
+.fourOhFourImage {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+
+.fiveHundredError {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+
+.showDesktop {
+    display: block;
+}
+
+.showMobile {
+    display: none;
+}
+
+footer {
+    background-color: #545E75;
+    color: #F7F7FF;
+    text-align: center;
+}
+
+@media screen and (max-width: 575px){
+    .formBorder {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .logo {
+        width: 40%;
+    }
+
+    .fourOhFourImage {
+        background-size: cover;
+    }
+
+    .fiveHundredError {
+        background-size: cover;
+    }
+
+    .showDesktop {
+        display: none;
+    }
+    
+    .showMobile {
+        display: block;
+    }
+    
+    .editSize {
+        max-width: 100%;
+    }
+    
+    .deleteSize {
+        max-width: 100%;
+    }
+}
